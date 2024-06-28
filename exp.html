@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management</title>
+    <link rel="stylesheet" href="exp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Management</h1>
+        <div class="form-container">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="date" id="date">
+            <select id="category">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-btn">SAVE</button>
+        </div>
+        <div class="expenses-container">
+            <h2>Expenses</h2>
+            <ul id="expenses-list"></ul>
+        </div>
+        <div class="summary-container">
+            <h2>Summary</h2>
+            <p>Total Income: <span id="total-income">₹0.00</span></p>
+            <p>Total Expenses: <span id="total-expenses">₹0.00</span></p>
+            <p>Net Balance: <span id="net-balance">₹0.00</span></p>
+        </div>
+    </div>
+    <script src="exp.js"></script>
+</body>
+</html>
